@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>My First HTML Page</title>
+   <!-- =====================================================
+       BASIC DOCUMENT METADATA
+    ====================================================== -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+   <title>Your Page Title | Your Site Name</title>
+   <meta name="description" content="A concise, compelling description of your page for SEO and social sharing.">
+   <meta name="keywords" content="keyword1, keyword2, keyword3">
+   <meta name="author" content="Your Name or Company">
+   <meta name="application-name" content="Your App Name">
+
+   <!-- Canonical URL -->
+   <link rel="canonical" href="https://www.example.com/">
+
+   <!-- =====================================================
+       SEARCH ENGINE / CRAWLER METADATA
+    ====================================================== -->
+   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+   <meta name="googlebot" content="index, follow">
+   <meta name="bingbot" content="index, follow">
+
+   <!-- =====================================================
+       REFERRER & SECURITY POLICIES
+    ====================================================== -->
+   <meta name="referrer" content="strict-origin-when-cross-origin">
+   <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        img-src 'self' https: data:;
+        script-src 'self' https:;
+        style-src 'self' 'unsafe-inline' https:;
+        font-src 'self' https: data:;
+        connect-src 'self' https:;
+        frame-ancestors 'none';
+        base-uri 'self';
+        form-action 'self';
+    ">
+   <meta http-equiv="Permissions-Policy" content="
+        camera=(),
+        microphone=(),
+        geolocation=(),
+        fullscreen=(self)
+    ">
+
+   <!-- =====================================================
+       THEME & UI
+    ====================================================== -->
+   <meta name="theme-color" content="#0d1117">
+   <meta name="color-scheme" content="light dark">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+   <meta name="apple-mobile-web-app-title" content="Your App Name">
+
+   <!-- =====================================================
+       OPEN GRAPH (FACEBOOK, LINKEDIN, ETC.)
+    ====================================================== -->
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="Your Site Name">
+   <meta property="og:title" content="Your Page Title">
+   <meta property="og:description" content="A concise, compelling description for social media previews.">
+   <meta property="og:url" content="https://www.example.com/">
+   <meta property="og:image" content="https://www.example.com/og-image.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta property="og:locale" content="en_US">
+
+   <!-- =====================================================
+       TWITTER / X CARDS
+    ====================================================== -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Your Page Title">
+   <meta name="twitter:description" content="A concise description optimized for Twitter/X.">
+   <meta name="twitter:image" content="https://www.example.com/twitter-image.jpg">
+   <meta name="twitter:site" content="@yourhandle">
+   <meta name="twitter:creator" content="@yourhandle">
+
+   <!-- =====================================================
+       FAVICONS & APPLE TOUCH ICONS
+    ====================================================== -->
+   <link rel="icon" href="/favicon.ico" sizes="any">
+   <link rel="icon" type="image/svg+xml" href="/icon.svg">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+   <!-- =====================================================
+       STYLES
+    ====================================================== -->
+   <link rel="stylesheet" href="./css/styles.css">
+
+   <!-- =====================================================
+       SCRIPTS
+    ====================================================== -->
+   <script src="./scripts/main.js" defer></script>
 </head>
+
 <body>
 
-    <h1>Main Heading</h1>
-    <p>
-        This is the first paragraph under the main heading. It contains some 
-        <strong>bold text</strong> to emphasize important ideas and some 
-        <em>italic text</em> to highlight subtle points. 
-        Here is a <span style="background-color: yellow;">highlighted phrase</span> using a span element.
-    </p>
-    <p>
-        Another short paragraph goes here. You can use HTML to structure content 
-        clearly and make it easier to read.
-    </p>
-
-    <h2>Section Heading</h2>
-    <p>
-        This section introduces a new topic. Notice how headings help organize 
-        your content. This sentence includes a <strong>strong emphasis</strong> 
-        and an <em>emphasized phrase</em>.
-    </p>
-
-    <h3>Subsection Heading</h3>
-    <p>
-        As you move down heading levels, the content becomes more specific. 
-        Here’s a <span style="color: blue;">blue highlighted span</span> to show 
-        how spans can style inline text.
-    </p>
-
-    <h4>Smaller Heading</h4>
-    <p>
-        Headings from h1 to h6 help create a clear hierarchy. This paragraph 
-        demonstrates how text flows under an h4 heading.
-    </p>
-
-    <h5>Even Smaller Heading</h5>
-    <p>
-        You won’t use h5 and h6 as often, but they’re useful for deep structure. 
-        This paragraph includes <strong>bold</strong> and <em>italic</em> text again.
-    </p>
-
-    <h6>Smallest Heading</h6>
-    <p>
-        This is the smallest heading level. A <span style="font-weight: bold; color: red;">styled span</span> 
-        can draw attention to specific words without affecting the whole paragraph.
-    </p>
+   <!-- Your page content goes here -->
 
 </body>
+
 </html>

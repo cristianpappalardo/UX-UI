@@ -1,0 +1,43 @@
+/* =====================================================
+   GLOBAL STYLES
+====================================================== */
+:root {
+    --primary-color: #0d1117;
+    --secondary-color: #30363d;
+    --text-color: #c9d1d9;
+    --accent-color: #58a6ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+/* =====================================================
+   TYPOGRAPHY
+====================================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* =====================================================
+   CONTAINERS
+====================================================== */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}

@@ -1,208 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA Astronaut Application</title>
-    <link rel="stylesheet" href="./css/styles.css">
+   <!-- =====================================================
+       BASIC DOCUMENT METADATA
+    ====================================================== -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+   <title>NASA Astronaut Application</title>
+   <meta name="description" content="Apply to become a NASA astronaut. Fill out the application form to start your journey to space.">
+   <meta name="keywords" content="NASA, astronaut, application, space, career">
+   <meta name="author" content="NASA">
+   <meta name="application-name" content="NASA Astronaut Application">
+
+   <!-- Canonical URL -->
+   <link rel="canonical" href="https://www.example.com/">
+
+   <!-- =====================================================
+       SEARCH ENGINE / CRAWLER METADATA
+    ====================================================== -->
+   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+   <meta name="googlebot" content="index, follow">
+   <meta name="bingbot" content="index, follow">
+
+   <!-- =====================================================
+       REFERRER & SECURITY POLICIES
+    ====================================================== -->
+   <meta name="referrer" content="strict-origin-when-cross-origin">
+   <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        img-src 'self' https: data:;
+        script-src 'self' https:;
+        style-src 'self' 'unsafe-inline' https:;
+        font-src 'self' https: data:;
+        connect-src 'self' https:;
+        frame-ancestors 'none';
+        base-uri 'self';
+        form-action 'self';
+    ">
+   <meta http-equiv="Permissions-Policy" content="
+        camera=(),
+        microphone=(),
+        geolocation=(),
+        fullscreen=(self)
+    ">
+
+   <!-- =====================================================
+       THEME & UI
+    ====================================================== -->
+   <meta name="theme-color" content="#0d1117">
+   <meta name="color-scheme" content="light dark">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+   <meta name="apple-mobile-web-app-title" content="NASA Astronaut Application">
+
+   <!-- =====================================================
+       OPEN GRAPH (FACEBOOK, LINKEDIN, ETC.)
+    ====================================================== -->
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="NASA">
+   <meta property="og:title" content="NASA Astronaut Application">
+   <meta property="og:description" content="Apply to become a NASA astronaut. Fill out the application form to start your journey to space.">
+   <meta property="og:url" content="https://www.nasa.gov/astronaut-application/">
+   <meta property="og:image" content="https://www.nasa.gov/og-image.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta property="og:locale" content="en_US">
+
+   <!-- =====================================================
+       TWITTER / X CARDS
+    ====================================================== -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="NASA Astronaut Application">
+   <meta name="twitter:description" content="Apply to become a NASA astronaut. Fill out the application form to start your journey to space.">
+   <meta name="twitter:image" content="https://www.example.com/twitter-image.jpg">
+   <meta name="twitter:site" content="@NASA">
+   <meta name="twitter:creator" content="@NASA">
+
+   <!-- =====================================================
+       FAVICONS & APPLE TOUCH ICONS
+    ====================================================== -->
+   <link rel="icon" href="/favicon.ico" sizes="any">
+   <link rel="icon" type="image/svg+xml" href="/icon.svg">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+   <!-- =====================================================
+       STYLES
+    ====================================================== -->
+   <link rel="stylesheet" href="./css/styles.css">
+
+   <!-- =====================================================
+       SCRIPTS
+    ====================================================== -->
+   <script src="./scripts/main.js" defer></script>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>🚀 NASA Astronaut Candidate Application</h1>
-            <p>Join us on an extraordinary journey to space!</p>
-        </header>
+   <div class="container">
+      <header>
+         <h1>🚀 NASA Astronaut Candidate Application</h1>
+         <p>Join us on an extraordinary journey to space!</p>
+      </header>
 
-        <form id="astronautForm" class="form-container">
-            <!-- Personal Information Section -->
-            <fieldset>
-                <legend>Personal Information</legend>
-                
-                <div class="form-group">
-                    <label for="firstName">First Name *</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                </div>
+      <form id="astronautForm" class="form-container">
+         <!-- Personal Information Section -->
+         <fieldset>
+            <legend>Personal Information</legend>
 
-                <div class="form-group">
-                    <label for="middleName">Middle Name</label>
-                    <input type="text" id="middleName" name="middleName">
-                </div>
-
-                <div class="form-group">
-                    <label for="lastName">Last Name *</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                </div>
-            </fieldset>
-
-            <!-- Physical Characteristics Section -->
-            <fieldset>
-                <legend>Physical Characteristics</legend>
-
-                <div class="form-group">
-                    <label for="age">Age *</label>
-                    <input type="number" id="age" name="age" min="18" max="65" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="weight">Weight (kg) - Maximum 100kg *</label>
-                    <input type="number" id="weight" name="weight" min="0" max="100" step="0.1" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="gender">Gender *</label>
-                    <select id="gender" name="gender" required>
-                        <option value="">-- Select --</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="non-binary">Non-Binary</option>
-                        <option value="prefer-not-to-say">Prefer Not to Say</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="hairColor">Hair Color *</label>
-                    <select id="hairColor" name="hairColor" required>
-                        <option value="">-- Select --</option>
-                        <option value="black">Black</option>
-                        <option value="brown">Brown</option>
-                        <option value="blonde">Blonde</option>
-                        <option value="red">Red</option>
-                        <option value="gray">Gray</option>
-                        <option value="white">White</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="eyeColor">Eye Color *</label>
-                    <select id="eyeColor" name="eyeColor" required>
-                        <option value="">-- Select --</option>
-                        <option value="brown">Brown</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                        <option value="hazel">Hazel</option>
-                        <option value="amber">Amber</option>
-                        <option value="gray">Gray</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-            </fieldset>
-
-            <!-- Mission Preference Section -->
-            <fieldset>
-                <legend>Mission Preference</legend>
-
-                <div class="form-group">
-                    <label for="mission">Desired Mission *</label>
-                    <select id="mission" name="mission" required>
-                        <option value="">-- Select a Mission --</option>
-                        <option value="lunar">Lunar Exploration (Moon)</option>
-                        <option value="iss">International Space Station (ISS)</option>
-                        <option value="mars">Mars Colonization</option>
-                        <option value="venus">Venus Research</option>
-                        <option value="asteroid">Asteroid Mining</option>
-                        <option value="deep-space">Deep Space Exploration</option>
-                    </select>
-                </div>
-            </fieldset>
-
-            <!-- Contact Information Section -->
-            <fieldset>
-                <legend>Contact Information</legend>
-
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="address">Street Address *</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="city">City *</label>
-                        <input type="text" id="city" name="city" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="state">State/Province *</label>
-                        <input type="text" id="state" name="state" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="zipcode">Zip/Postal Code *</label>
-                        <input type="text" id="zipcode" name="zipcode" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="country">Country *</label>
-                    <input type="text" id="country" name="country" required>
-                </div>
-            </fieldset>
-
-            <!-- Biography Section -->
-            <fieldset>
-                <legend>Professional Summary</legend>
-
-                <div class="form-group">
-                    <label for="biography">Short Biography (max 255 characters) *</label>
-                    <textarea id="biography" name="biography" maxlength="255" rows="4" placeholder="Tell us about yourself..." required></textarea>
-                    <small id="charCount">255 characters remaining</small>
-                </div>
-            </fieldset>
-
-            <!-- Additional Information Section -->
-            <fieldset>
-                <legend>Additional Information</legend>
-
-                <div class="form-group">
-                    <label for="experience">Prior Space Experience</label>
-                    <textarea id="experience" name="experience" rows="3" placeholder="Describe any prior space-related experience..."></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="languages">Languages Spoken</label>
-                    <input type="text" id="languages" name="languages" placeholder="e.g., English, Spanish, Russian">
-                </div>
-
-                <div class="form-group checkbox-group">
-                    <label>
-                        <input type="checkbox" name="medical" value="passed">
-                        I have successfully completed medical clearance
-                    </label>
-                </div>
-
-                <div class="form-group checkbox-group">
-                    <label>
-                        <input type="checkbox" name="training" value="ready">
-                        I am prepared for intensive training programs
-                    </label>
-                </div>
-
-                <div class="form-group checkbox-group">
-                    <label>
-                        <input type="checkbox" name="terms" value="agreed">
-                        I agree to the terms and conditions of the NASA Astronaut Program
-                    </label>
-                </div>
-            </fieldset>
-
-            <!-- Form Actions -->
-            <div class="form-actions">
-                <button type="reset" class="btn btn-secondary">Clear Form</button>
-                <button type="submit" class="btn btn-primary">Submit Application</button>
+            <div class="form-group">
+               <label for="firstName">First Name *</label>
+               <input type="text" id="firstName" name="firstName" required>
             </div>
-        </form>
-    </div>
 
-    <script src="./scripts/script.js"></script>
+            <div class="form-group">
+               <label for="middleName">Middle Name</label>
+               <input type="text" id="middleName" name="middleName">
+            </div>
+
+            <div class="form-group">
+               <label for="lastName">Last Name *</label>
+               <input type="text" id="lastName" name="lastName" required>
+            </div>
+         </fieldset>
+
+         <!-- Physical Characteristics Section -->
+         <fieldset>
+            <legend>Physical Characteristics</legend>
+
+            <div class="form-group">
+               <label for="age">Age *</label>
+               <input type="number" id="age" name="age" min="18" max="65" required>
+            </div>
+
+            <div class="form-group">
+               <label for="weight">Weight (kg) - Maximum 100kg *</label>
+               <input type="number" id="weight" name="weight" min="0" max="100" step="0.1" required>
+            </div>
+
+            <div class="form-group">
+               <label for="gender">Gender *</label>
+               <select id="gender" name="gender" required>
+                  <option value="">-- Select --</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="non-binary">Non-Binary</option>
+                  <option value="prefer-not-to-say">Prefer Not to Say</option>
+               </select>
+            </div>
+
+            <div class="form-group">
+               <label for="hairColor">Hair Color *</label>
+               <select id="hairColor" name="hairColor" required>
+                  <option value="">-- Select --</option>
+                  <option value="black">Black</option>
+                  <option value="brown">Brown</option>
+                  <option value="blonde">Blonde</option>
+                  <option value="red">Red</option>
+                  <option value="gray">Gray</option>
+                  <option value="white">White</option>
+                  <option value="other">Other</option>
+               </select>
+            </div>
+
+            <div class="form-group">
+               <label for="eyeColor">Eye Color *</label>
+               <select id="eyeColor" name="eyeColor" required>
+                  <option value="">-- Select --</option>
+                  <option value="brown">Brown</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                  <option value="hazel">Hazel</option>
+                  <option value="amber">Amber</option>
+                  <option value="gray">Gray</option>
+                  <option value="other">Other</option>
+               </select>
+            </div>
+         </fieldset>
+
+         <!-- Mission Preference Section -->
+         <fieldset>
+            <legend>Mission Preference</legend>
+
+            <div class="form-group">
+               <label for="mission">Desired Mission *</label>
+               <select id="mission" name="mission" required>
+                  <option value="">-- Select a Mission --</option>
+                  <option value="lunar">Lunar Exploration (Moon)</option>
+                  <option value="iss">International Space Station (ISS)</option>
+                  <option value="mars">Mars Colonization</option>
+                  <option value="venus">Venus Research</option>
+                  <option value="asteroid">Asteroid Mining</option>
+                  <option value="deep-space">Deep Space Exploration</option>
+               </select>
+            </div>
+         </fieldset>
+
+         <!-- Contact Information Section -->
+         <fieldset>
+            <legend>Contact Information</legend>
+
+            <div class="form-group">
+               <label for="email">Email Address *</label>
+               <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+               <label for="phone">Phone Number *</label>
+               <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+            </div>
+
+            <div class="form-group">
+               <label for="address">Street Address *</label>
+               <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-row">
+               <div class="form-group">
+                  <label for="city">City *</label>
+                  <input type="text" id="city" name="city" required>
+               </div>
+
+               <div class="form-group">
+                  <label for="state">State/Province *</label>
+                  <input type="text" id="state" name="state" required>
+               </div>
+
+               <div class="form-group">
+                  <label for="zipcode">Zip/Postal Code *</label>
+                  <input type="text" id="zipcode" name="zipcode" required>
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="country">Country *</label>
+               <input type="text" id="country" name="country" required>
+            </div>
+         </fieldset>
+
+         <!-- Biography Section -->
+         <fieldset>
+            <legend>Professional Summary</legend>
+
+            <div class="form-group">
+               <label for="biography">Short Biography (max 255 characters) *</label>
+               <textarea id="biography" name="biography" maxlength="255" rows="4"
+                  placeholder="Tell us about yourself..." required></textarea>
+               <small id="charCount">255 characters remaining</small>
+            </div>
+         </fieldset>
+
+         <!-- Additional Information Section -->
+         <fieldset>
+            <legend>Additional Information</legend>
+
+            <div class="form-group">
+               <label for="experience">Prior Space Experience</label>
+               <textarea id="experience" name="experience" rows="3"
+                  placeholder="Describe any prior space-related experience..."></textarea>
+            </div>
+
+            <div class="form-group">
+               <label for="languages">Languages Spoken</label>
+               <input type="text" id="languages" name="languages" placeholder="e.g., English, Spanish, Russian">
+            </div>
+
+            <div class="form-group checkbox-group">
+               <label>
+                  <input type="checkbox" name="medical" value="passed">
+                  I have successfully completed medical clearance
+               </label>
+            </div>
+
+            <div class="form-group checkbox-group">
+               <label>
+                  <input type="checkbox" name="training" value="ready">
+                  I am prepared for intensive training programs
+               </label>
+            </div>
+
+            <div class="form-group checkbox-group">
+               <label>
+                  <input type="checkbox" name="terms" value="agreed">
+                  I agree to the terms and conditions of the NASA Astronaut Program
+               </label>
+            </div>
+         </fieldset>
+
+         <!-- Form Actions -->
+         <div class="form-actions">
+            <button type="reset" class="btn btn-secondary">Clear Form</button>
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+         </div>
+      </form>
+   </div>
+
+   <script src="./scripts/script.js"></script>
 </body>
+
 </html>

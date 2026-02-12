@@ -1,81 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Lists and Tables Example</title>
+   <!-- =====================================================
+       BASIC DOCUMENT METADATA
+    ====================================================== -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+   <title>Your Page Title | Your Site Name</title>
+   <meta name="description" content="A concise, compelling description of your page for SEO and social sharing.">
+   <meta name="keywords" content="keyword1, keyword2, keyword3">
+   <meta name="author" content="Your Name or Company">
+   <meta name="application-name" content="Your App Name">
+
+   <!-- Canonical URL -->
+   <link rel="canonical" href="https://www.example.com/">
+
+   <!-- =====================================================
+       SEARCH ENGINE / CRAWLER METADATA
+    ====================================================== -->
+   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+   <meta name="googlebot" content="index, follow">
+   <meta name="bingbot" content="index, follow">
+
+   <!-- =====================================================
+       REFERRER & SECURITY POLICIES
+    ====================================================== -->
+   <meta name="referrer" content="strict-origin-when-cross-origin">
+   <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        img-src 'self' https: data:;
+        script-src 'self' https:;
+        style-src 'self' 'unsafe-inline' https:;
+        font-src 'self' https: data:;
+        connect-src 'self' https:;
+        frame-ancestors 'none';
+        base-uri 'self';
+        form-action 'self';
+    ">
+   <meta http-equiv="Permissions-Policy" content="
+        camera=(),
+        microphone=(),
+        geolocation=(),
+        fullscreen=(self)
+    ">
+
+   <!-- =====================================================
+       THEME & UI
+    ====================================================== -->
+   <meta name="theme-color" content="#0d1117">
+   <meta name="color-scheme" content="light dark">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+   <meta name="apple-mobile-web-app-title" content="Your App Name">
+
+   <!-- =====================================================
+       OPEN GRAPH (FACEBOOK, LINKEDIN, ETC.)
+    ====================================================== -->
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="Your Site Name">
+   <meta property="og:title" content="Your Page Title">
+   <meta property="og:description" content="A concise, compelling description for social media previews.">
+   <meta property="og:url" content="https://www.example.com/">
+   <meta property="og:image" content="https://www.example.com/og-image.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta property="og:locale" content="en_US">
+
+   <!-- =====================================================
+       TWITTER / X CARDS
+    ====================================================== -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Your Page Title">
+   <meta name="twitter:description" content="A concise description optimized for Twitter/X.">
+   <meta name="twitter:image" content="https://www.example.com/twitter-image.jpg">
+   <meta name="twitter:site" content="@yourhandle">
+   <meta name="twitter:creator" content="@yourhandle">
+
+   <!-- =====================================================
+       FAVICONS & APPLE TOUCH ICONS
+    ====================================================== -->
+   <link rel="icon" href="/favicon.ico" sizes="any">
+   <link rel="icon" type="image/svg+xml" href="/icon.svg">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+   <!-- =====================================================
+       STYLES
+    ====================================================== -->
+   <link rel="stylesheet" href="./css/styles.css">
+
+   <!-- =====================================================
+       SCRIPTS
+    ====================================================== -->
+   <script src="./scripts/main.js" defer></script>
 </head>
+
 <body>
 
-    <h1>Lists and Tables Practice Page</h1>
-    <p>
-        This page demonstrates different types of lists, images, links, and tables. 
-        It also includes mixed content inside a table, such as images and lists.
-    </p>
-
-    <h2>My Favorite Foods (Ordered List)</h2>
-    <ol>
-        <li>Pizza</li>
-        <li>Sushi</li>
-        <li>Lasagna</li>
-        <li>Chocolate Cake</li>
-    </ol>
-
-    <h2>My Hobbies (Unordered List)</h2>
-    <ul>
-        <li>Gaming</li>
-        <li>Cooking</li>
-        <li>Hiking</li>
-        <li>Reading</li>
-    </ul>
-
-    <h2>Useful Links (List of Links)</h2>
-    <ul>
-        <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
-        <li><a href="https://www.mozilla.org">Mozilla</a></li>
-        <li><a href="https://www.w3schools.com">W3Schools</a></li>
-    </ul>
-
-    <h2>Animal Gallery (List of Images)</h2>
-    <ul>
-        <li><img src="https://placekitten.com/150/150" alt="Kitten"></li>
-        <li><img src="https://placebear.com/150/150" alt="Bear"></li>
-        <li><img src="https://placehold.co/150x150" alt="Placeholder"></li>
-    </ul>
-
-    <h2>Information Table</h2>
-    <p>This table includes text, images, and even a list inside one of the cells.</p>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Animal</th>
-            <th>Image</th>
-            <th>Facts</th>
-        </tr>
-
-        <tr>
-            <td>Cat</td>
-            <td><img src="https://placekitten.com/120/120" alt="Cat"></td>
-            <td>
-                <ul>
-                    <li>Independent</li>
-                    <li>Playful</li>
-                    <li>Great companions</li>
-                </ul>
-            </td>
-        </tr>
-
-        <tr>
-            <td>Bear</td>
-            <td><img src="https://placebear.com/120/120" alt="Bear"></td>
-            <td>
-                <ol>
-                    <li>Strong animals</li>
-                    <li>Live in forests</li>
-                    <li>Omnivores</li>
-                </ol>
-            </td>
-        </tr>
-    </table>
+   <!-- Your page content goes here -->
 
 </body>
+
 </html>
