@@ -1,43 +1,52 @@
 /* =====================================================
    GLOBAL STYLES
 ====================================================== */
+
+/* CSS Custom Properties (Variables) for consistent theming */
 :root {
-    --primary-color: #0d1117;
-    --secondary-color: #30363d;
-    --text-color: #c9d1d9;
-    --accent-color: #58a6ff;
+    --primary-color: #0d1117;      /* Dark background color */
+    --secondary-color: #30363d;    /* Secondary dark color for elements */
+    --text-color: #c9d1d9;         /* Light text color for readability */
+    --accent-color: #58a6ff;       /* Accent blue for links and highlights */
 }
 
+/* Universal selector - applies to all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;                      /* Remove default margins */
+    padding: 0;                     /* Remove default padding */
+    box-sizing: border-box;         /* Include padding and border in element's total width/height */
 }
 
+/* Body styles - sets the foundation for the entire page */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--primary-color);
+    line-height: 1.6;               /* Improves text readability with adequate line spacing */
+    color: var(--text-color);        /* Apply text color from CSS variables */
+    background-color: var(--primary-color);  /* Dark background using CSS variable */
 }
 
 /* =====================================================
    TYPOGRAPHY
 ====================================================== */
+
+/* Heading styles - consistent styling for all heading levels */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-weight: 600;               /* Semi-bold weight for emphasis */
+    margin-bottom: 1rem;            /* Space below headings for breathing room */
 }
 
+/* Paragraph spacing */
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;            /* Space below paragraphs for better readability */
 }
 
 /* =====================================================
    CONTAINERS
 ====================================================== */
+
+/* Main content container - centers and constrains content width */
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+    max-width: 1200px;              /* Maximum width for optimal readability */
+    margin: 0 auto;                 /* Center the container horizontally */
+    padding: 2rem 1rem;             /* Padding inside the container */
 }
