@@ -68,22 +68,89 @@
    <script src="./scripts/main.js" defer></script>
 </head>
 
+<!-- =====================================================
+     BODY SECTION
+     Main content area for the page
+===================================================== -->
 <body>
 
+   <!-- Main content container -->
    <main>
-      <h1>My Favorite Food: Pizza ★</h1>
+      <!-- Page title -->
+      <h1>Lists and Tables Practice</h1>
+      <p>Below are examples of ordered and unordered lists, a list of links, a list of images, and tables with mixed
+         content.</p>
 
-      <h2>Why It Wins Every Time</h2>
-      <p>Pizza is comfort on a slice: a crisp crust, tangy sauce, and melted cheese that feels <strong>made to order</strong>. I love how each place puts a personal signature on the same basic idea.</p>
-      <p>The balance of salty, savory, and a little sweet is what makes it feel <em>complete</em>. One bite can turn a rough day into a good one.</p>
+      <!-- Section: numbered list example -->
+      <h2>Ordered List</h2>
+      <ol>
+         <li>Plan the layout</li>
+         <li>Gather images</li>
+         <li>Build the table</li>
+      </ol>
 
-      <h2>The Toppings That Matter</h2>
-      <p>Fresh mozzarella, basil, and roasted veggies are my top picks because they add texture and depth. A drizzle of chili oil is <strong>essential</strong> when I want heat.</p>
-      <p>My favorite pies include mushrooms, olives, and caramelized onions for contrast. The mix of chewy, crisp, and gooey textures feels almost <em>designed</em>.</p>
+      <!-- Section: bullet point list example -->
+      <h2>Unordered List</h2>
+      <ul>
+         <li>Clean HTML structure</li>
+         <li>Clear headings</li>
+         <li>Consistent spacing</li>
+      </ul>
 
-      <h2>The Experience</h2>
-      <p>Part of the joy is the ritual: warm box, a quick slice, and a satisfying crunch. The sound, the aroma, and the first bite are pure ✨.</p>
-      <p>Whether I eat it alone or with friends, pizza always feels like a little celebration ☺. That sense of warmth is why it stays at the top of my list.</p>
+      <!-- Section: list containing hyperlinks -->
+      <h2>List of Links</h2>
+      <ul>
+         <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+         <li><a href="https://www.nationalgeographic.com/">National Geographic</a></li>
+         <li><a href="https://www.britannica.com/">Encyclopaedia Britannica</a></li>
+      </ul>
+
+      <!-- Section: list containing images -->
+      <h2>List of Images</h2>
+      <ul>
+         <li><img src="./assets/cat-fun.webp" alt="Kitten 1" width="160" height="120"></li>
+         <li><img src="./assets/Two cats.webp" alt="Kitten 2" width="161" height="120"></li>
+         <li><img src="./assets/ThreeCats.webp" alt="Kitten 3" width="162" height="120"></li>
+      </ul>
+
+      <!-- Section: data table with diverse content types -->
+      <h2>Table with Mixed Content</h2>
+      <table>
+         <!-- Table header row -->
+         <thead>
+            <tr>
+               <th>Item</th>
+               <th>Preview</th>
+               <th>Notes</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Sample Image</td>
+               <td>
+                  <img src="./assets/kitten.jpg" alt="Kitten" width="140" height="100">
+               </td>
+               <td>
+                  <ul>
+                     <li>Small thumbnail</li>
+                     <li>Square-ish crop</li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td>Resource Links</td>
+               <td>
+                  <ul>
+                     <li><a href="https://www.example.com/">Example</a></li>
+                     <li><a href="https://www.mozilla.org/">Mozilla</a></li>
+                  </ul>
+               </td>
+               <td>
+                  <p>These links open in the same tab by default.</p>
+               </td>
+            </tr>
+         </tbody>
+      </table>
    </main>
 
 </body>

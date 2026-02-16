@@ -68,44 +68,54 @@
    <script src="./scripts/main.js" defer></script>
 </head>
 
+<!-- =====================================================
+     BODY SECTION
+     Main content area for the page
+===================================================== -->
 <body>
 
+   <!-- Main content container -->
    <main>
-      <h1>Studio Notes</h1>
-      <p>Welcome to a small collection of ideas, experiments, and tiny wins from the week. Each entry is short on
-         purpose so the <strong>core takeaway</strong> stays clear.</p>
-      <p>I use this page as a simple habit tracker and a reminder to <em>finish what I start</em> before chasing the
-         next shiny thing.</p>
+      <!-- Page title -->
+      <h1>Links and Images Playground</h1>
+      <p>This page shows a few different kinds of links and images. Scroll down to see the line break, the email link,
+         and an image that is also a link.</p>
 
-      <h2>Current Focus</h2>
-      <p>This month is about rhythm: consistent practice, steady feedback, and clean execution. The goal is to build a
-         <span style="background-color: #fff2b2; padding: 0 0.2rem;">reliable routine</span> rather than chasing perfect
-         results.</p>
-      <p>Small daily tasks are more useful than big plans, so I list one priority and two supporting actions.</p>
+      <!-- Section: standard hyperlink example -->
+      <h2>Regular Link</h2>
+      <p>
+         Visit the
+         <a href="https://www.wikipedia.org/">Wikipedia homepage</a>
+         in the same window.
+      </p>
 
-      <h3>Design Warmups</h3>
-      <p>Warmups begin with a single constraint: one typeface, one color, one layout idea. The constraint keeps the work
-         <strong>honest and focused</strong>.</p>
-      <p>After a quick sketch, I write a one-sentence critique and underline the <span
-            style="background-color: #fff2b2; padding: 0 0.2rem;">one improvement</span> to try tomorrow.</p>
+      <!-- Section: link that opens in new tab/window -->
+      <h2>New Window Link</h2>
+      <p>
+         Open the
+         <a href="https://www.nationalgeographic.com/" target="_blank" rel="noopener noreferrer">National Geographic
+            site</a>
+         in a new tab.
+      </p>
 
-      <h4>Micro Projects</h4>
-      <p>Micro projects are small enough to finish in a day, like a landing page or a profile card. Shipping fast makes
-         the feedback loop <em>surprisingly fun</em>.</p>
-      <p>Each project ends with a short checklist: what worked, what broke, and what felt <span
-            style="background-color: #fff2b2; padding: 0 0.2rem;">unnecessarily hard</span>.</p>
+      <!-- Section: email contact link -->
+      <h2>Email Link</h2>
+      <p>
+         Questions? Send a note to
+         <a href="mailto:cristian.pappalardo@edu-its.it">cristian.pappalardo@edu-its.it</a>.
+      </p>
 
-      <h5>Tools and Tactics</h5>
-      <p>My toolkit is simple: browser dev tools, a text editor, and a notebook. The best tool is still the habit of
-         writing <strong>clear notes</strong>.</p>
-      <p>When I get stuck, I step back and reframe the problem in one <span
-            style="background-color: #fff2b2; padding: 0 0.2rem;">plain sentence</span>.</p>
-
-      <h6>Next Steps</h6>
-      <p>Tomorrow I will pick one component to refine and one page to rebuild from scratch. The only rule is to keep the
-         scope <em>small and sharp</em>.</p>
-      <p>If there is extra time, I will document the process so future me can repeat the <span
-            style="background-color: #fff2b2; padding: 0 0.2rem;">good parts</span>.</p>
+      <!-- Section: image examples -->
+      <h2>Images</h2>
+      <p>Here is a simple image example, followed by a line break to separate the next item.</p>
+      <!-- Standalone image with alt text -->
+      <img src="./assets/kitten1.jpg" alt="A playful kitten" width="480" height="320">
+      <br>
+      <p>And here is an image that works as a link:</p>
+      <!-- Image wrapped as clickable link -->
+      <a href="https://en.wikipedia.org/wiki/Felidae">
+         <img src="./assets/kitten2.jpg" alt="Another kitten used as a link" width="481" height="321">
+      </a>
    </main>
 
 </body>
