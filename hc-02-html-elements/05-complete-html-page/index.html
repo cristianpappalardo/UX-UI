@@ -25,16 +25,6 @@
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
 
-
-    <!-- =====================================================
-       THEME & UI
-    ====================================================== -->
-    <meta name="theme-color" content="#0d1117">
-    <meta name="color-scheme" content="light dark">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Your App Name">
-
     <!-- =====================================================
        OPEN GRAPH (FACEBOOK, LINKEDIN, ETC.)
     ====================================================== -->
@@ -79,9 +69,99 @@
 </head>
 
 <body>
+    <header>
+        <h1>My Page Title</h1>
+        <p>Welcome to this complete HTML5 example</p>
+    </header>
 
-    <!-- Your page content goes here -->
-    <h1>Welcome to Your Page</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#example-table">Table</a></li>
+            <li><a href="#related-links">Related links</a></li>
+            <li><a href="#contact-info">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article id="home">
+            <h2>The Main Content</h2>
+            <p>This is the primary content section of the page. In HTML5, we use the <code>&lt;main&gt;</code> element
+                instead of generic <code>&lt;div&gt;</code> elements with IDs like "content".</p>
+
+            <section id="features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Semantic HTML5 markup</li>
+                    <li>Proper heading hierarchy</li>
+                    <li>Accessible structure</li>
+                    <li>Real content examples</li>
+                </ul>
+            </section>
+
+            <section id="example-table">
+                <h3>Sample Data Table</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>Latest markup language</td>
+                            <td>Current</td>
+                        </tr>
+                        <tr>
+                            <td>CSS3</td>
+                            <td>Advanced styling</td>
+                            <td>Current</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Interactive functionality</td>
+                            <td>Current</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <figure>
+                <img src="./assets/kitten.jpg" alt="A kitten">
+                <figcaption>Figure 1: a kitten playing with a toy</figcaption>
+            </figure>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Sidebar</h2>
+        <section id="related-links">
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+                <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+            </ul>
+        </section>
+
+        <section id="quick-tips">
+            <h3>Quick Tips</h3>
+            <p>Use semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and
+                <code>&lt;footer&gt;</code> for better structure and accessibility.
+            </p>
+        </section>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 My Page. All rights reserved.</p>
+        <address id="contact-info">
+            Contact us at <a href="mailto:cristian.pappalardo@edu-its.it">cristian.pappalardo@edu-its.it</a>
+        </address>
+    </footer>
 </body>
 
 </html>

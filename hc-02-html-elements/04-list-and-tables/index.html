@@ -26,37 +26,6 @@
    <meta name="bingbot" content="index, follow">
 
    <!-- =====================================================
-       REFERRER & SECURITY POLICIES
-    ====================================================== -->
-   <meta name="referrer" content="strict-origin-when-cross-origin">
-   <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        img-src 'self' https: data:;
-        script-src 'self' https:;
-        style-src 'self' 'unsafe-inline' https:;
-        font-src 'self' https: data:;
-        connect-src 'self' https:;
-        frame-ancestors 'none';
-        base-uri 'self';
-        form-action 'self';
-    ">
-   <meta http-equiv="Permissions-Policy" content="
-        camera=(),
-        microphone=(),
-        geolocation=(),
-        fullscreen=(self)
-    ">
-
-   <!-- =====================================================
-       THEME & UI
-    ====================================================== -->
-   <meta name="theme-color" content="#0d1117">
-   <meta name="color-scheme" content="light dark">
-   <meta name="apple-mobile-web-app-capable" content="yes">
-   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-   <meta name="apple-mobile-web-app-title" content="Your App Name">
-
-   <!-- =====================================================
        OPEN GRAPH (FACEBOOK, LINKEDIN, ETC.)
     ====================================================== -->
    <meta property="og:type" content="website">
@@ -101,7 +70,76 @@
 
 <body>
 
-   <!-- Your page content goes here -->
+   <main>
+      <h1>Lists and Tables Practice</h1>
+      <p>Below are examples of ordered and unordered lists, a list of links, a list of images, and tables with mixed
+         content.</p>
+
+      <h2>Ordered List</h2>
+      <ol>
+         <li>Plan the layout</li>
+         <li>Gather images</li>
+         <li>Build the table</li>
+      </ol>
+
+      <h2>Unordered List</h2>
+      <ul>
+         <li>Clean HTML structure</li>
+         <li>Clear headings</li>
+         <li>Consistent spacing</li>
+      </ul>
+
+      <h2>List of Links</h2>
+      <ul>
+         <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+         <li><a href="https://www.nationalgeographic.com/">National Geographic</a></li>
+         <li><a href="https://www.britannica.com/">Encyclopaedia Britannica</a></li>
+      </ul>
+
+      <h2>List of Images</h2>
+      <ul>
+         <li><img src="./assets/cat-fun.webp" alt="Kitten thumbnail 1" width="160" height="120"></li>
+         <li><img src="./assets/Two cats.webp" alt="Kitten thumbnail 2" width="161" height="120"></li>
+         <li><img src="./assets/ThreeCats.webp" alt="Kitten thumbnail 3" width="162" height="120"></li>
+      </ul>
+
+      <h2>Table with Mixed Content</h2>
+      <table>
+         <thead>
+            <tr>
+               <th>Item</th>
+               <th>Preview</th>
+               <th>Notes</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Sample Image</td>
+               <td>
+                  <img src="./assets/kitten.jpg" alt="Kitten preview" width="140" height="100">
+               </td>
+               <td>
+                  <ul>
+                     <li>Small thumbnail</li>
+                     <li>Square-ish crop</li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td>Resource Links</td>
+               <td>
+                  <ul>
+                     <li><a href="https://www.example.com/">Example</a></li>
+                     <li><a href="https://www.mozilla.org/">Mozilla</a></li>
+                  </ul>
+               </td>
+               <td>
+                  <p>These links open in the same tab by default.</p>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </main>
 
 </body>
 
