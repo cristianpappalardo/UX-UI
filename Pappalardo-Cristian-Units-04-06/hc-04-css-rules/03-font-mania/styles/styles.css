@@ -1,0 +1,17 @@
+/*all links*/
+a[href] {
+    font-family: 'Arial', sans-serif;
+    color: #ff0000;
+}
+
+/*inside lists*/
+li a[href] {
+    font-family: 'Times New Roman', serif;
+    color: #0000ff;
+}
+
+/*inside paragraphs*/
+p a[href] {
+    font-family: 'Betania Patmos In', cursive;
+    color: #00ff00;
+}

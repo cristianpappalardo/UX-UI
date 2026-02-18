@@ -1,0 +1,82 @@
+/* styles.css - CSS file for styling the HTML page */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+    margin: 10px;
+}
+
+header {
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    background-color: #e2e2e2;
+}
+
+aside {
+    background-color: #d4d4d4;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Additional styles for sections and subsections */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    margin-top: 0;
+}
+
+#contact-info {
+    font-style: normal;
+    background-color: lightblue;
+}
+
+#features {
+    background-color: lightgreen;
+}
+#related-links {
+    background-color: lightyellow;
+}
+#quick-tips {
+    background-color: lightcoral;
+}
+#example-table {
+    background-color: lightcyan;
+}
