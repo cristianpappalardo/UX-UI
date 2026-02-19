@@ -1,7 +1,23 @@
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+
 /*all links*/
 a[href] {
     font-family: 'Arial', sans-serif;
     color: #ff0000;
+}
+
+/* unvisited link */
+a:link {
+    color: #ff0000;
+}
+
+/* visited link */
+a:visited {
+    color: green;
 }
 
 /*inside lists*/
@@ -14,4 +30,49 @@ li a[href] {
 p a[href] {
     font-family: 'Betania Patmos In', cursive;
     color: #00ff00;
+}
+
+/*google fonts section*/
+#google-fonts {
+    font-size: 20px;
+}
+
+#roboto-font {
+    font-family: 'Roboto', sans-serif;
+    color: #ff00ff;
+}
+
+#lobster-font {
+    font-family: 'Lobster', cursive;
+    color: #00ffff;
+}
+
+#open-sans-font {
+    font-family: 'Open Sans', sans-serif;
+    color: #ff9900;
+}
+
+#montserrat-font {
+    font-family: 'Montserrat', sans-serif;
+    color: #9900ff;
+}
+
+#playfair-display-font {
+    font-family: 'Playfair Display', serif;
+    color: #0099ff;
+}
+
+#source-code-pro-font {
+    font-family: 'Source Code Pro', monospace;
+    color: #ff0099;
+}
+
+#pacifico-font {
+    font-family: 'Pacifico', cursive;
+    color: #00ff99;
+}
+
+#raleway-font {
+    font-family: 'Raleway', sans-serif;
+    color: #9900cc;
 }
