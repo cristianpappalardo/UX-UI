@@ -1,0 +1,115 @@
+/* global style */
+/* This file contains the custom styles for the test page. It is used to demonstrate the effects of the destyle.css */
+
+/* Example custom styles to show the difference from the destyle reset */
+html {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header{
+    margin-bottom: 10px ;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: #eee;
+    list-style-type: none;
+    margin: 0;
+}
+
+/*list items */
+ul,
+ol {
+    padding: 10px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 20px;
+}
+/* Headings */
+h1,
+h2 {
+    color: red;
+    font-weight: bold;
+
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+p{
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    text-decoration: underline;
+}
+
+a:link {
+    color: #007BFF;
+}
+
+a:visited {
+    color: #0408fa9f;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Form styles */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+form {
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    border: 2px solid #00000060;
+    border-radius: 4px;
+}
+
+input:hover {
+    border-color: #000000;
+}
+
+button {
+    border: 2px solid #00000060;
+    background-color: lightgray;
+    color: black;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
