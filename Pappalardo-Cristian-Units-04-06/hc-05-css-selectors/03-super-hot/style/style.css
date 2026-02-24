@@ -11,15 +11,42 @@ body {
 }
 
 /* Add a rule to make links and visited links dark orange */
+a:link,
+a:visited {
+  color: darkorange;
+}
 
 /* Add a rule that will make the table header have different background color. */
 
+th {
+  background-color: lightcoral;
+}
+
 /* Add a rule that will make the first cell in each data row have a red background and white text. */
+
+td:first-child {
+  background-color: red;
+  color: white;
+}
 
 /* Add a rule that will "zebra stripe" the backgrounds of the rows, alternating between white and #eeeeee. */
 
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
 /* Add a rule that will turn the label red when the checkbox is clicked. */
+input[type="checkbox"]:checked+label {
+  color: red;
+}
 
 /* Add a rule that will make the first letter of the pepper name huge and bold. */
+td:nth-child(2)::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+}
 
 /* Add a rule that will find any pepper that is superhot and color the link red. */
+td a[title*="superhot"] {
+  color: red;
+}
