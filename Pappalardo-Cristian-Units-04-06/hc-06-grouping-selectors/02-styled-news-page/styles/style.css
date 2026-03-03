@@ -1,0 +1,130 @@
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background: #e5e7eb;
+			color: #0f172a;
+		}
+
+		.page {
+			width: min(1100px, 92%);
+			margin: 24px auto;
+		}
+
+		header {
+			background: #1f2937;
+			color: #f9fafb;
+			border: 2px solid #111827;
+			padding: 20px;
+			margin-bottom: 14px;
+		}
+
+		nav {
+			background: #dbeafe;
+			border: 2px solid #93c5fd;
+			padding: 12px;
+			margin-top: 12px;
+		}
+
+		nav a {
+			margin-right: 14px;
+			text-decoration: none;
+			color: #1d4ed8;
+			font-weight: 700;
+		}
+
+		nav a:hover {
+			text-decoration: underline;
+		}
+
+		main {
+			background: #f8fafc;
+			border: 2px solid #cbd5e1;
+			padding: 16px;
+			margin-bottom: 14px;
+		}
+
+		section {
+			background: #ecfeff;
+			border: 2px solid #67e8f9;
+			padding: 14px;
+			margin-bottom: 16px;
+		}
+
+		section h2 {
+			margin-top: 0;
+			font-size: 1.6rem;
+			color: #0c4a6e;
+		}
+
+		#headline-news {
+			background: #fff7ed;
+			border: 3px solid #fb923c;
+		}
+
+		#headline-news h2 {
+			color: #9a3412;
+			font-size: 1.95rem;
+		}
+
+		article {
+			background: #ffffff;
+			border: 1px solid #bae6fd;
+			padding: 12px;
+			margin-bottom: 12px;
+		}
+
+		article h3 {
+			margin: 0 0 8px;
+			color: #075985;
+			font-size: 1.25rem;
+		}
+
+		#headline-news article {
+			border: 2px solid #fdba74;
+			background: #fffaf0;
+		}
+
+		#headline-news article h3 {
+			color: #c2410c;
+			font-size: 1.35rem;
+		}
+
+		img {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+			display: block;
+			border: 1px solid #cbd5e1;
+			margin-bottom: 8px;
+		}
+
+		.content-grid {
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			gap: 16px;
+		}
+
+		aside {
+			background: #fef3c7;
+			border: 2px solid #f59e0b;
+			padding: 14px;
+			align-self: start;
+		}
+
+		aside h2 {
+			margin-top: 0;
+			color: #92400e;
+			font-size: 1.35rem;
+		}
+
+		footer {
+			background: #312e81;
+			color: #eef2ff;
+			border: 2px solid #1e1b4b;
+			padding: 14px;
+			text-align: center;
+		}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =====================================================
+        BASIC DOCUMENT METADATA
+    ====================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Spans, Divs and Semantic Layout</title>
+    <meta name="description" content="Practice page with spans, semantic sections, div containers, and image sizing rules.">
+    <meta name="keywords" content="html5, css, spans, divs, semantic layout, images">
+    <meta name="author" content="Cristian Pappalardo">
+    <meta name="application-name" content="UX-UI Practice">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.example.com/practice-layout">
+
+    <!-- =====================================================
+        SEARCH ENGINE / CRAWLER METADATA
+    ====================================================== -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+
+    <!-- =====================================================
+        OPEN GRAPH (FACEBOOK, LINKEDIN, ETC.)
+    ====================================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UX-UI Practice">
+    <meta property="og:title" content="Spans, Divs and Semantic Layout">
+    <meta property="og:description" content="An HTML and CSS exercise page with semantic sections and responsive images.">
+    <meta property="og:url" content="https://www.example.com/practice-layout">
+    <meta property="og:image" content="https://picsum.photos/1200/630">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- =====================================================
+        TWITTER / X CARDS
+    ====================================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Spans, Divs and Semantic Layout">
+    <meta name="twitter:description" content="Practice page for spans, div containers, semantic HTML5, and CSS image rules.">
+    <meta name="twitter:image" content="https://picsum.photos/1200/630">
+    <meta name="twitter:site" content="@example">
+    <meta name="twitter:creator" content="@example">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="site-header">
+            <h1>Spans, Divs, and Semantic HTML5</h1>
+            <p>
+                This page demonstrates
+                <span class="tag">spans</span>
+                <span class="tag">div containers</span>
+                and <span id="important-text">semantic layout sections</span>.
+            </p>
+        </header>
+
+        <div class="layout">
+            <main class="content-area">
+                <div class="article-card">
+                    <h2>Content Area</h2>
+                    <p>
+                        Here is a sentence with a <span class="highlight">highlighted phrase</span> and another
+                        <span class="highlight">styled span element</span>.
+                    </p>
+                </div>
+
+                <div class="image-frame">
+                    <img src="https://picsum.photos/id/1015/640/420" alt="Mountain and lake" width="640" height="420">
+                </div>
+
+                <div class="gallery">
+                    <div>
+                        <img class="thumb" src="https://picsum.photos/id/1025/400/300" alt="Parrot" width="400" height="300">
+                    </div>
+                    <div>
+                        <img class="thumb" src="https://picsum.photos/id/1040/400/300" alt="Forest road" width="400" height="300">
+                    </div>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <div class="note-box">
+                    <p>
+                        The sidebar is a separate semantic section with its own spacing, border, background, and
+                        alignment styles.
+                    </p>
+                    <span class="tip">Quick tip: use classes for reusable styles.</span>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <p>Footer section with rounded corners, custom colors, and centered text.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
