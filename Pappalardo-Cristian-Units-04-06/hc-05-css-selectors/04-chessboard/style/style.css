@@ -3,10 +3,12 @@ td {
  height: 20px;
 }
 
-td:nth-child(odd) {
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
  background-color: orange;
 }
 
-td:nth-child(even) {
+tr:nth-child(odd) td:nth-child(odd),
+tr:nth-child(even) td:nth-child(even) {
  background-color: black;
 }

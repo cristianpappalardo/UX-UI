@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f3f4f6;
+	color: #1f2937;
+}
+
+main {
+	max-width: 980px;
+	margin: 32px auto;
+	padding: 0 16px;
+}
+
+h1 {
+	margin: 0 0 8px;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+.contacts-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #d1d5db;
+	background-color: #ffffff;
+}
+
+.contacts-table th,
+.contacts-table td {
+	text-align: left;
+	padding: 12px 14px;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+/* Header background color */
+.contacts-table thead th {
+	background-color: #0f766e;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+/* Bonus: alternate every 2 rows (1-2 gray, 3-4 white, then repeat) */
+.contacts-table tbody tr:nth-child(4n + 1),
+.contacts-table tbody tr:nth-child(4n + 2) {
+	background-color: #e5e7eb;
+}
+
+.contacts-table tbody tr:nth-child(4n + 3),
+.contacts-table tbody tr:nth-child(4n + 4) {
+	background-color: #ffffff;
+}
+
+/* Hover state for table rows */
+.contacts-table tbody tr:hover {
+	background-color: #bfdbfe;
+}
