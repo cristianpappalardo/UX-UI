@@ -1,0 +1,94 @@
+div{
+    display: inline-block;
+
+}
+
+.frogs-container{
+    box-sizing: border-box;
+    position: relative;
+}
+
+.frog-green-big:hover .frog-eye-left,
+.frog-green-big:hover .frog-eye-right,
+.frog-green-small:hover .frog-eye-left,
+.frog-green-small:hover .frog-eye-right,
+.frog-orange-big:hover .frog-eye-left,
+.frog-orange-big:hover .frog-eye-right,
+.frog-orange-small:hover .frog-eye-left,
+.frog-orange-small:hover .frog-eye-right{
+    background-color: black;
+}
+
+.frog-green-big,
+.frog-green-small,
+.frog-orange-big,
+.frog-orange-small{
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.frog-green-big{
+    background-color: greenyellow;
+    width: 300px;
+    height: 100px;
+}
+
+.frog-green-small{
+    background-color: greenyellow;
+    width: 100px;
+    height: 50px;
+}
+
+.frog-orange-big{
+    background-color: orange;
+    width: 300px;
+    height: 100px;
+}
+
+.frog-orange-small{
+    background-color: orange;
+    width: 100px;
+    height: 50px;
+}
+
+.frog-eye-left,
+.frog-eye-right{
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+}
+
+.frog-eye-left{
+    left: 14px;
+}
+
+.frog-eye-right{
+    right: 14px;
+}
+
+.frog-eye-left::after,
+.frog-eye-right::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+
+.frog-mouth{
+    display: inline;
+    position: absolute;
+    width: 30px;
+    border: 1px dashed black;
+    top: 10px;
+    left: 40%;
+}
