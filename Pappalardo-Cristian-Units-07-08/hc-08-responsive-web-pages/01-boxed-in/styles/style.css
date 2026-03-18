@@ -1,130 +1,41 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: 1rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle at 20% 20%, #1f2937 0%, #0f172a 55%, #020617 100%);
+    background-color: lightblue;
 }
 
-.scene-frame {
-    width: min(94vw, 460px);
-    display: grid;
-    gap: 0.75rem;
+img{
+    content: url("../assets/images/cat1.jpg");
+    width: 100vw;
+    height: auto;
+    align-content: center;
 }
-
-.scene {
-    aspect-ratio: 3 / 4;
-    border-radius: 28px;
-    border: 6px solid #e2e8f0;
-    background-image: url("https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=700&q=80");
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
-    transition: all 320ms ease;
-}
-
-.label {
-    margin: 0;
-    text-align: center;
-    color: #e2e8f0;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-/* 1) >= 480px: the room starts closing in */
-@media (min-width: 480px) {
-    .scene {
-        background-image: url("https://images.unsplash.com/photo-1551843073-4a9a5b6fcd5f?auto=format&fit=crop&w=700&q=80");
-        background-position: 45% center;
-        border-radius: 20px;
-        border-width: 10px;
-        filter: saturate(1.1);
-    }
-
-    .label::after {
-        content: " | Narrow Corridor";
+/* small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    img{
+        content: url("../assets/images/cat2.jpg");
     }
 }
 
-/* 2) >= 640px: colder light and tighter framing */
-@media (min-width: 640px) {
-    .scene {
-        background-image: url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80");
-        background-position: center 20%;
-        border-radius: 14px;
-        filter: contrast(1.1) grayscale(0.15);
-        transform: scale(0.98);
-    }
-
-    .label::after {
-        content: " | Walls Move Closer";
-    }
-}
-
-/* 3) >= 768px: almost boxed in */
+/* medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .scene-frame {
-        width: min(78vw, 440px);
-    }
-
-    .scene {
-        background-image: url("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=80");
-        background-position: center;
-        border-radius: 8px;
-        border-color: #fca5a5;
-        box-shadow: 0 20px 50px rgba(239, 68, 68, 0.28);
-        filter: contrast(1.18) saturate(0.95);
-    }
-
-    .label::after {
-        content: " | Boxed In";
+    img{
+        content: url("../assets/images/cat3.jpg");
     }
 }
-
-/* 4) >= 1024px: compressed square frame */
-@media (min-width: 1024px) {
-    .scene-frame {
-        width: min(60vw, 380px);
-    }
-
-    .scene {
-        aspect-ratio: 1 / 1;
-        background-image: url("https://images.unsplash.com/photo-1544717305-996b815c338c?auto=format&fit=crop&w=700&q=80");
-        background-position: center 30%;
-        border-radius: 4px;
-        border-color: #fef08a;
-        filter: contrast(1.2) sepia(0.2);
-    }
-
-    .label::after {
-        content: " | No Escape";
+/* large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    img{
+        content: url("../assets/images/cat4.jpg");
     }
 }
-
-/* 5) >= 1280px: tiny viewport, intense pressure */
-@media (min-width: 1280px) {
-    .scene-frame {
-        width: min(48vw, 320px);
-    }
-
-    .scene {
-        aspect-ratio: 4 / 5;
-        background-image: url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80");
-        background-position: center 18%;
-        border-radius: 0;
-        border-color: #fb7185;
-        box-shadow: 0 20px 56px rgba(251, 113, 133, 0.35);
-        filter: grayscale(0.25) contrast(1.25);
-    }
-
-    .label::after {
-        content: " | Final Squeeze";
+/* extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    img{
+        content: url("../assets/images/cat5.jpg");
     }
 }
