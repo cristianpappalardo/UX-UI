@@ -1,0 +1,110 @@
+:root {
+  --bg: #f8f7f4;
+  --surface: #ffffff;
+  --ink: #1f2933;
+  --accent: #0f766e;
+  --accent-dark: #0b5d57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, #f8f7f4 0%, #ece8df 100%);
+}
+
+.site-header {
+  padding: 1.5rem 2rem 0.75rem;
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  color: #52606d;
+}
+
+.main-nav {
+  padding: 0.75rem 2rem 1rem;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--surface);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(26, 32, 44, 0.08);
+}
+
+.menu-list a {
+  display: inline-block;
+  padding: 0.6rem 0.95rem;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+
+.menu-list a:hover,
+.menu-list a:focus-visible {
+  background: var(--accent);
+  color: #ffffff;
+  outline: none;
+}
+
+.content {
+  max-width: 900px;
+  margin: 1.25rem auto;
+  padding: 0 2rem 2rem;
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .site-header {
+    padding-inline: 1rem;
+  }
+
+  .main-nav {
+    padding-inline: 1rem;
+  }
+
+  .menu-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .menu-list {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .menu-list a {
+    display: block;
+    width: 100%;
+  }
+
+  .content {
+    padding-inline: 1rem;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 340px) {
+  .brand {
+    font-size: 1.4rem;
+  }
+}

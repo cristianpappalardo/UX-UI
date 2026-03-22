@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piemonte City Guide - Full Responsive Page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="masthead" id="top">
+      <div class="brand-row">
+        <h1>Piemonte City Guide</h1>
+        <p>Local routes, events, and practical tips for planning a better weekend.</p>
+      </div>
+
+      <nav aria-label="Primary navigation" class="site-nav">
+        <ul class="nav-list">
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#routes">Routes</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Trip planning sidebar">
+        <section class="panel">
+          <h2>Trip Snapshot</h2>
+          <dl>
+            <div>
+              <dt>Best season</dt>
+              <dd>April to October</dd>
+            </div>
+            <div>
+              <dt>Average day budget</dt>
+              <dd>35 to 55 EUR</dd>
+            </div>
+            <div>
+              <dt>Main transport</dt>
+              <dd>Train + urban bus</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="panel">
+          <h2>Pack Smart</h2>
+          <ul>
+            <li>Reusable bottle and light jacket</li>
+            <li>Comfortable walking shoes</li>
+            <li>Offline map for old town areas</li>
+            <li>Power bank for full-day routes</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2>Quick Contacts</h2>
+          <p><strong>Tourist desk:</strong> +39 011 010 010</p>
+          <p><strong>Medical guard:</strong> 116117</p>
+          <p><strong>Taxi dispatch:</strong> +39 011 222 2222</p>
+        </section>
+      </aside>
+
+      <main class="main-content" id="highlights">
+        <section class="hero">
+          <h2>Plan a complete city day without wasting time</h2>
+          <p>
+            Start at the central market for breakfast, move through museums in the
+            late morning, reserve the riverside walk for sunset, and close the day
+            in the historical center with local food spots that stay open late.
+          </p>
+        </section>
+
+        <section class="main-columns">
+          <article class="column-card" id="events">
+            <h3>Today and This Week</h3>
+            <p>
+              The city calendar focuses on outdoor culture, evening music, and
+              neighborhood markets. Most events are free or low-cost and easy to
+              reach with public transport.
+            </p>
+            <div class="table-wrap">
+              <table>
+                <caption>Upcoming picks</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Event</th>
+                    <th scope="col">Area</th>
+                    <th scope="col">Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Friday</td>
+                    <td>Open-air jazz set</td>
+                    <td>Murazzi</td>
+                    <td>20:30</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>Farmers market + tastings</td>
+                    <td>Porta Palazzo</td>
+                    <td>09:00</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>Craft workshop for families</td>
+                    <td>San Salvario</td>
+                    <td>11:00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="column-card" id="routes">
+            <h3>Suggested Routes</h3>
+            <p>
+              Choose your path by pace and available time. Every route includes at
+              least one food stop and one green area.
+            </p>
+            <ul class="route-list">
+              <li>
+                <h4>2-hour express route</h4>
+                <p>Historic center, espresso break, and panoramic viewpoint.</p>
+              </li>
+              <li>
+                <h4>Half-day creative route</h4>
+                <p>Street art district, design market, and artisan bakery.</p>
+              </li>
+              <li>
+                <h4>Full-day slow route</h4>
+                <p>Museum pass, riverside walk, and evening food street.</p>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="resource-grid" id="resources" aria-label="Useful resources">
+          <article class="resource-card">
+            <h3>Transit Status</h3>
+            <p>Live updates for metro and bus lines, with delay notifications.</p>
+          </article>
+          <article class="resource-card">
+            <h3>Indoor Alternatives</h3>
+            <p>Rain-friendly plans with galleries, libraries, and covered markets.</p>
+          </article>
+          <article class="resource-card">
+            <h3>Food by Budget</h3>
+            <p>Shortlist of local places split into quick, moderate, and premium.</p>
+          </article>
+        </section>
+
+        <section class="newsletter" id="newsletter">
+          <h2>Weekly Planning Brief</h2>
+          <p>
+            Receive a concise digest with next weekend events, route suggestions,
+            and practical mobility notes.
+          </p>
+          <form>
+            <label for="email">Email address</label>
+            <div class="form-row">
+              <input id="email" type="email" placeholder="name@example.com" required />
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer id="contact">
+      <p>Piemonte City Guide - Editorial team based in Turin</p>
+      <p>Email: hello@piemontecityguide.example | Tel: +39 011 345 6789</p>
+    </footer>
+  </body>
+</html>
